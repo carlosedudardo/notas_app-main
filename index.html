@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notas</title>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <section class="page-content">
+        <h1 class="titulo">Notas</h1>
+        <article class="notas-content">
+            <button id="crearBtn">Crear</button>
+            <table id="promediosTb">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Actividad</th>
+                        <th>Nota</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Entrega 1</td>
+                        <td>5</td>
+                        <td>
+                            <button>Modificar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article class="promedio-content">
+            <p id="prodioText">Su promedio es: 5</p>
+            <br>
+            <h2 id="mensajeNota">Felicitaciones, aprobó la materia</h2>
+        </article>
+    </section>
+    <section id="formularioModal" class="modal-content close-modal">
+        <article class="form-content">
+            <button id="cerrarModal"  class="cerrar-btn">X</button>
+            <h2 id="tituloModal">Crear/Modificar</h2>
+            <form id="formActividad" name="formularioActividad">
+                <div class="input-content marg-botton-16">
+                    <label>Nombre de la actividad</label>
+                    <input type="text" id="actividad" name="actividad">
+                </div>
+                <div class="input-content marg-botton-16">
+                    <label>Nota</label>
+                    <input type="number" id="nota" name="nota">
+                </div>
+                <div class="button-content">
+                    <button id="aceptarModal" type="button">Aceptar</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    <script src="js/promedio.js"></script>
+</body>
+
+</html>
